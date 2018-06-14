@@ -1,0 +1,25 @@
+.general-statistics {
+	background-image: url(../img/2241.jpg);
+	background-position: 80%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #5f38be;
+	padding: 40px 0 70px;
+	.title {
+		margin-left: 40px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	p {
+		color: #fff;
+		margin-left: 65px;
+		line-height: 20px;
+		span {
+			color: #fff;
+			font-family: 'Muller-Bold';
+		}
+	}
+	.btn-white {
+		margin-left: 130px;
+	}
+}

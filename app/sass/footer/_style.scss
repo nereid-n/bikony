@@ -1,0 +1,137 @@
+.footer {
+	background-color: #6a40cf;
+	font-size: 14px;
+	width: 100%;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__contacts {
+	background-color: #fff;
+	padding: 20px 10px 0;
+	box-shadow: 21px 13px 100px -36px #000000;
+}
+
+.footer__contacts-main--item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 17px;
+	img {
+		width: 25px;
+		height: 25px;
+		object-fit: contain;
+	}
+}
+
+.footer__contacts-social {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	margin: 30px 0 20px;
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			background-color: #6a40cf;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 3px;
+			img {
+				width: 15px;
+			}
+		}
+	}
+}
+
+.footer__title {
+	color: #fff;
+	text-transform: uppercase;
+	margin: 30px 0 15px;
+	span {
+		color: #fff;
+		text-transform: lowercase;
+		font-weight: normal;
+	}
+}
+
+.footer__request {
+	.footer__title {
+		text-align: center;
+	}
+}
+
+.footer__form-line {
+	margin: 0 auto;
+	background-color: #fff;
+	width: 50px;
+	height: 3px;
+}
+
+.footer__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+	input, textarea {
+		background-color: #a17df9;
+		border: none;
+		width: 240px;
+		padding: 14px 10px;
+		margin: 8px 0;
+		&::-webkit-input-placeholder {
+			color: #fff;
+		}
+		&::-moz-placeholder {
+			color: #fff;
+		}
+		&:-ms-input-placeholder {
+			color: #fff;
+		}
+		&:-moz-placeholder {
+			color: #fff;
+		}
+	}
+	textarea {
+		resize: none;
+		height: 85px;
+	}
+	.btn-white {
+		margin-top: 9px;
+	}
+}
+
+.footer__services {
+	margin-left: 50px;
+}
+
+.footer__services-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 35px;
+	.link-services {
+		margin: 8px 0;
+	}
+}
+
+.footer-bottom {
+	background-color: #fff;
+	text-align: center;
+	padding: 13px;
+	p {
+		margin: 0;
+		font-size: 40px;
+		font-family: 'Gilroy';
+		font-weight: bold;
+		color: #c9beec;
+	}
+}

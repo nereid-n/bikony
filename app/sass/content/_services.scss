@@ -1,0 +1,25 @@
+.link-services {
+	text-decoration: none;
+	color: #fff;
+	&:hover {
+		font-family: 'Muller-Bold';
+		text-decoration: underline;
+	}
+}
+
+.services {
+	background-color: #5f38be;
+	padding: 40px 0 70px;
+	.title {
+		color: #fff;
+		text-align: center;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		.link-services {
+			width: 20%;
+			margin: 10px 0;
+		}
+	}
+}
