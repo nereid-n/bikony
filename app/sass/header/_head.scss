@@ -1,8 +1,111 @@
+.header {
+  width: 100%;
+  background: linear-gradient(245deg, #fbfaff 90%, #f8f7fc 0);
+  &__content {
+    position: relative;
+    margin: 0 0 0 82px;
+  }
+  &__absolute {
+    position: absolute;
+    height: 370px;
+    width: 414px;
+    left: -207px;
+    top: 160px;
+    background: url("../img/head-triang.png") center center no-repeat;
+  }
+  &__wrapper-title {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 567px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    &:after {
+      content: '';
+      position: absolute;
+    }
+    .purple-btn {
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+    span {
+      text-align: right;
+      font-family: $mullerExtra;
+      color: #151515;;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 63px;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+  &__desc {
+    max-width: 615px;
+    color: #151515;
+    font-family: $mullerReg;
+    font-size: 20px;
+    padding-bottom: 70px;
+    line-height: 26px;
+  }
+  &__covering{
+    width: 279px;
+    height: 293px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.18);
+    border-radius: 0 50px;
+    background-color: #ffffff;
+    position: absolute;
+    right: -325px;
+    top: 0;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 47px;
+      width: 52px;
+      background: url("../img/icons/tring.png") no-repeat center center;
+      background-size: 100%;
+    }
+  }
+
+  &__absolute-text {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -185px;
+    top: 347px;
+    display: flex;
+    align-items: center;
+    color: #b9b8bc;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    img{
+      transform: rotate(-90deg);
+      position: relative;
+      left: -30px;
+    }
+  }
+  &__info {
+    max-width: 529px;
+    padding-bottom: 80px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+
+    a {
+      font-weight: 700;
+    }
+  }
+}
+
 .header__background {
-	width: 1000px;
-	height: 800px;
-	position: absolute;
-	background-color: #fff;
-	box-shadow: 0 0 70px 10px #d9d9d9;
-	transform: rotate(65deg);
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 70px 10px #d9d9d9;
+  transform: rotate(65deg);
 }
