@@ -1,111 +1,124 @@
 .header {
-  width: 100%;
-  background: linear-gradient(245deg, #fbfaff 90%, #f8f7fc 0);
-  &__content {
-    position: relative;
-    margin: 0 0 0 82px;
-  }
-  &__absolute {
-    position: absolute;
-    height: 370px;
-    width: 414px;
-    left: -207px;
-    top: 160px;
-    background: url("../img/head-triang.png") center center no-repeat;
-  }
-  &__wrapper-title {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    max-width: 567px;
-    margin-bottom: 50px;
-    margin-top: 150px;
-    &:after {
-      content: '';
-      position: absolute;
+    background: linear-gradient(245deg, #fbfaff 90%, #f8f7fc 0);
+    width: 100%;
+    &__background {
+        width: 150%;
+        height: 65vw;
+        top: -5%;
+        left: -28vw;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 70px 10px #d9d9d9;
+        transform: rotate(60deg);
+        background: linear-gradient(245deg, #fbfaff 90%, #f8f7fc 0);
+        &-wrapper {
+            width: 100%;
+            height: 65vw;
+            position: absolute;
+            overflow: hidden;
+        }
     }
-    .purple-btn {
-      margin-left: 15px;
-      margin-bottom: 10px;
+    .smartphone2 {
+        position: absolute;
+        right: 0%;
+        top: 9%;
+        width: 41%;
+        z-index: 2;
     }
-    span {
-      text-align: right;
-      font-family: $mullerExtra;
-      color: #151515;;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 63px;
-      text-transform: uppercase;
-      display: inline-block;
+    .smartphone {
+        position: absolute;
+        right: -11%;
+        top: -41%;
+        width: 41%;
     }
-  }
-  &__desc {
-    max-width: 615px;
-    color: #151515;
-    font-family: $mullerReg;
-    font-size: 20px;
-    padding-bottom: 70px;
-    line-height: 26px;
-  }
-  &__covering{
-    width: 279px;
-    height: 293px;
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.18);
-    border-radius: 0 50px;
-    background-color: #ffffff;
-    position: absolute;
-    right: -325px;
-    top: 0;
-    &:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 47px;
-      width: 52px;
-      background: url("../img/icons/tring.png") no-repeat center center;
-      background-size: 100%;
+    .tr-light {
+        position: absolute;
+        width: 20%;
+        left: -10%;
+        top: 12%;
     }
-  }
+    .tr-blur {
+        position: absolute;
+        width: 9%;
+        top: 20%;
+        left: 2%;
+    }
+    &__content {
+        position: relative;
+        margin: 0 0 0 82px;
+    }
+    &__absolute {
+        position: absolute;
+        height: 370px;
+        width: 414px;
+        left: -207px;
+        top: 160px;
+        background: url("../img/head-triang.png") center center no-repeat;
+    }
+    &__wrapper-title {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        max-width: 567px;
+        margin-bottom: 50px;
+        margin-top: 150px;
+        &:after {
+            content: '';
+            position: absolute;
+        }
+        .purple-btn {
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+        .title {
+            display: inline-block;
+            text-align: right;
+        }
+    }
+    &__desc {
+        max-width: 615px;
+        color: #151515;
+        font-family: $mullerReg;
+        font-size: 20px;
+        padding-bottom: 80px;
+        line-height: 26px;
+    }
+    .covering{
+        padding: 50px 40px 40px;
+        font-size: 36px;
+        font-family: 'Muller-Bold';
+        z-index: 1;
+        line-height: 1em;
+        right: -325px;
+        .number {
+            font-size: 54px;
+            line-height: 70px;
+            font-family: Muller-Bold;
+        }
+        .bottom {
+            font-family: 'Muller';
+            text-align: right;
+            display: block;
+            margin-top: 15px;
+            font-size: 36px;
+            line-height: 1em;
+        }
+    }
 
-  &__absolute-text {
-    position: absolute;
-    transform: rotate(90deg);
-    left: -185px;
-    top: 347px;
-    display: flex;
-    align-items: center;
-    color: #b9b8bc;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2.6px;
-    img{
-      transform: rotate(-90deg);
-      position: relative;
-      left: -30px;
+    .absolute-text {
+        left: -185px;
+        top: 347px;
     }
-  }
-  &__info {
-    max-width: 529px;
-    padding-bottom: 80px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    position: relative;
-
-    a {
-      font-weight: 700;
+    &__info {
+        max-width: 529px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        position: relative;
+        padding: 0 10px 80px 30px;
+        a {
+            font-weight: 700;
+        }
     }
-  }
-}
-
-.header__background {
-  width: 1000px;
-  height: 800px;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0 0 70px 10px #d9d9d9;
-  transform: rotate(65deg);
 }

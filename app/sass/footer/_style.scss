@@ -4,6 +4,15 @@
 	width: 100%;
 }
 
+.footer__main-title {
+	background-color: #fff;
+	padding: 20px 0;
+	.title {
+		margin: 0;
+		margin-left: 100px;
+	}
+}
+
 .footer-top {
 	display: flex;
 	justify-content: space-around;

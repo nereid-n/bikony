@@ -1,0 +1,78 @@
+.work {
+	background-color: #fbfaff;
+	padding: 60px 0;
+	&__wrapper-btn {
+		width: 100%;
+		margin-top: 50px;
+	}
+	&__content {
+		display: flex;
+	}
+	&__common {
+		width: 45%;
+		padding: 0 30px;
+		.play {
+			transform: rotate(-2deg);
+			margin-left: -40px;
+		}
+		.smartphone {
+			position: absolute;
+			left: -30%;
+			top: 20%;
+		}
+	}
+	&__steps {
+		width: 55%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__step {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 84%;
+		margin: 3px 0;
+		&:nth-child(odd) {
+			width: 100%;
+			margin-left: -26px;
+			&:before {
+				position: relative;
+				content: "";
+				background-image: url(../img/arrow.png);
+				background-repeat: no-repeat;
+				width: 26px;
+				height: 50px;
+				top: 97px;
+				left: 26px;
+			}
+		}
+		&-circle {
+			background-color: #fff;
+			min-width: 120px;
+			min-height: 120px;
+			max-width: 120px;
+			max-height: 120px;
+			border-radius: 50%;
+			box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-weight: 700;
+			.number {
+				color: #653cc7;
+				font-size: 50px;
+			}
+			.text {
+				display: block;
+				margin-top: -10px;
+			}
+		}
+		p {
+			width: 80%;
+			margin: 0;
+			margin-left: 30px;
+		}
+	}
+}

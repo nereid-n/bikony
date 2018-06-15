@@ -1,0 +1,66 @@
+.advantages {
+	z-index: 0;
+	background-color: #fff;
+	position: relative;
+	.title {
+		width: 65%;
+	}
+	.absolute-text {
+		right: -9vw;
+		bottom: 17%;
+	}
+	.container {
+		display: flex;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	&__img {
+		width: 40%;
+		position: relative;
+		&-main {
+			width: 80%;
+		}
+
+		&-support, 
+		&-stopclock {
+			border-radius: 50%;
+			border: 1px solid #e8e8e8;
+			position: absolute;
+			width: 20vw;
+			height: 20vw;
+			width: 7vw;
+			height: 7vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 25px 15px 120px rgba(105, 105, 105, 0.24);
+			img {
+				width: 60%;
+			}
+		}
+		&-support {
+			top: 20%;
+			left: -11%;
+		}
+
+		&-stopclock {
+			top: 50%;
+			right: 7%;
+			width: 8vw;
+			height: 8vw;
+		}
+	}
+	&__text {
+		width: 60%;
+		margin-top: 40px;
+		&-bottom {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			&--item {
+				width: 45%;
+			}
+		}
+	}
+}
