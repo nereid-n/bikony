@@ -1,0 +1,110 @@
+.products {
+	overflow: hidden;
+	padding-top: 100px;
+	padding-bottom: 60px;
+	&__header {
+		.title {
+			width: 55%;
+		}
+		p {
+			width: 60%;
+			margin-left: 35%;
+			margin-top: -85px;
+		}
+	}
+	&__slider {
+		width: 100vw;
+		margin-left: calc((-100vw + 1150px) / 2);
+		margin-top: 50px;
+		&--item {
+			margin: 25px 15px;
+			box-shadow: 0 0 50px #e2e2e2;
+			display: flex !important;
+			flex-direction: column;
+			align-items: center;
+			height: 440px !important;
+			padding: 20px 40px;
+			text-align: center;
+			h3 {
+				min-height: 80px;
+				font-size: 1.2em;
+				font-family: $mullerReg;
+				span {
+					font-family: $mullerExtra;
+					font-size: inherit;
+				}
+			}
+			img {
+				width: 40%;
+				object-fit: contain;
+				margin: 0 0 15px;
+			}
+		}
+		.slick {
+			&-list {
+				margin: 0 -15px;
+				&:before {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 20%;
+					background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(225, 225, 225, 0));
+					z-index: 1;
+				}
+				&:after {
+					position: absolute;
+					content: "";
+					right: 0;
+					top: 0;
+					height: 100%;
+					width: 20%;
+					background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(225, 225, 225, 0));
+					z-index: 1;
+				}
+			}
+			&-arrow {
+				background-color: #fff;
+				width: 60px;
+				height: 60px;
+				background-color: #fff;
+				box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&:before {
+					top: 15px;
+				}
+			}
+			&-next {
+				top: 55%;
+				left: 80%;
+				z-index: 2;
+				&:before {
+					background-image: url(../img/icons/arrow-r.png);
+					left: 14px;
+				}
+				&:hover:before {
+					background-image: url(../img/icons/arrow-r.png);
+				}
+			}
+			&-prev {
+				top: 55%;
+				left: 16%;
+				z-index: 2;
+				&:before {
+					background-image: url(../img/icons/arrow-l.png);
+					left: 10px;
+				}
+				&:hover:before {
+					background-image: url(../img/icons/arrow-l.png);
+				}
+			}
+		}
+	}
+	&__wrapper-btn {
+		display: flex;
+		justify-content: center;
+		margin-top: 40px;
+	}
+}

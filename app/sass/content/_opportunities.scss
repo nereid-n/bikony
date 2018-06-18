@@ -1,0 +1,68 @@
+.opportunities {
+	padding-bottom: 100px;
+	.title {
+		width: 60%;
+		margin-bottom: 0;
+	}
+	.covering {
+		width: 400px;
+		right: 0;
+		top: -70px;
+		&__text {
+			padding: 10px 50px;
+			span {
+				color: #653cc7;
+				font-family: $mullerExtra;
+				font-size: 54px;
+			}
+			p {
+				margin-top: 0;
+				font-weight: 700;
+			}
+			.next {
+				position: absolute;
+				content: "";
+				width: 130px;
+				height: 130px;
+				background-image: url(../img/icons/arrow.png);
+				top: 213px;
+				left: -60px;
+				background-repeat: no-repeat;
+			}
+		}
+		&:before {
+			display: none;
+		}
+	}
+	&__slider {
+		overflow: hidden;
+		border-top-right-radius: 50px;
+		&-text {
+			width: 60%;
+			margin-left: 50px;
+			span {
+				font-family: $mullerExtra;
+			}
+		}
+		&-img {
+			width: 100%;
+			height: 260px;
+			.slider-wrapper,
+			.slider-item {
+				height: 100%;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.slider-item {
+			width: calc(100% / 8);
+		}
+		.slider-wrapper {
+			width: calc(100% * 8);
+			display: flex;
+		}
+	}
+}

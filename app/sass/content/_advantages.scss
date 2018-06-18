@@ -6,7 +6,7 @@
 		width: 65%;
 	}
 	.absolute-text {
-		right: -9vw;
+		right: -10%;
 		bottom: 17%;
 	}
 	.container {
@@ -26,10 +26,8 @@
 			border-radius: 50%;
 			border: 1px solid #e8e8e8;
 			position: absolute;
-			width: 20vw;
-			height: 20vw;
-			width: 7vw;
-			height: 7vw;
+			width: 120px;
+			height: 120px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -41,18 +39,18 @@
 		}
 		&-support {
 			top: 20%;
-			left: -11%;
+			left: -25px;
 		}
 
 		&-stopclock {
 			top: 50%;
-			right: 7%;
-			width: 8vw;
-			height: 8vw;
+			right: 50px;
+			width: 140px;
+			height: 140px;
 		}
 	}
 	&__text {
-		width: 60%;
+		width: 55%;
 		margin-top: 40px;
 		&-bottom {
 			display: flex;

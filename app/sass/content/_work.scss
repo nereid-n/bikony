@@ -1,9 +1,21 @@
 .work {
 	background-color: #fbfaff;
 	padding: 60px 0;
+	.absolute-text {
+		right: -10%;
+		bottom: 80px;
+	}
+	.tr-transparent {
+		position: absolute;
+		left: -190px;
+		top: 220px;
+		width: 130px;
+		transform: rotate(-15deg);
+	}
 	&__wrapper-btn {
-		width: 100%;
-		margin-top: 50px;
+		bottom: -85px;
+		position: absolute;
+		margin-left: -150px;
 	}
 	&__content {
 		display: flex;
@@ -14,11 +26,12 @@
 		.play {
 			transform: rotate(-2deg);
 			margin-left: -40px;
+			position: absolute;
 		}
 		.smartphone {
 			position: absolute;
-			left: -30%;
-			top: 20%;
+			left: -27%;
+			top: 30%;
 		}
 	}
 	&__steps {
