@@ -22,22 +22,30 @@
 			display: flex !important;
 			flex-direction: column;
 			align-items: center;
-			height: 440px !important;
-			padding: 20px 40px;
+			height: 410px !important;
+			padding: 40px 50px;
 			text-align: center;
+			@include breakpoint(max-width 1700px) {
+				padding: 20px 20px;
+				height: 440px !important;
+			}
 			h3 {
 				min-height: 80px;
 				font-size: 1.2em;
 				font-family: $mullerReg;
+				margin: 0;
 				span {
 					font-family: $mullerExtra;
 					font-size: inherit;
 				}
 			}
+			p {
+				margin: 0;
+			}
 			img {
 				width: 40%;
 				object-fit: contain;
-				margin: 0 0 15px;
+				margin: 10px 0 20px;
 			}
 		}
 		.slick {

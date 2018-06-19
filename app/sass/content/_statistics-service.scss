@@ -1,6 +1,5 @@
-.statistics-service {
-	padding: 70px 0;
-	.statistics-service-background {
+.statistics-service-background,
+.opporunities-background {
 		width: 100%;
 		position: absolute;
 		overflow: hidden;
@@ -20,6 +19,9 @@
 			top: 40px;
 		}
 	}
+
+.statistics-service {
+	padding: 70px 0;
 	&__main {
 		width: 68%;
 		p {
