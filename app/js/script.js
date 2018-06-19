@@ -23,4 +23,7 @@ $(document).ready(function() {
 	}
 
 	// end opportunities slider
+	if ($('.mobile__change').length > 0) {
+		tabsMobileBlock('.mobile__change-img--laptop', '.mobile__change-img--smartphone', '.mobile__change-text');
+	}
 });
